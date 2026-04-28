@@ -1,0 +1,123 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+   <title>Super Awesome Pizza! Order Menu</title>
+   <style>
+      ol, ul { 
+     list-style-type: none;
+    }
+    body {
+        font: 1.25rem/1.75rem sans-serif;
+        color: rgb(126, 5, 0);
+        background-color: rgb(253, 244, 220);
+        
+    }
+    header {
+        background-color: #fcb336;
+        text-align: center;
+        padding: 12px;
+        margin-bottom: 36px;
+    }
+    h1 {
+        color: rgb(231, 34, 34);
+        font: bold 1.75rem sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        text-align: center;
+        margin: 0;
+    }
+    h2 {
+        color: orange;
+        font: bold 1.25rem sans-serif;
+        text-align: center;
+    }
+    legend {
+        color: rgb(255, 102, 0);
+        font: sans-serif;
+        text-align: center;
+    }   
+    
+   </style>
+</head>
+
+<body>
+
+<h1>Super Awesome Pizza! | Pizza-on-Demand <br>&lpar; Gluten Free &rpar; </h1>
+
+<form action="http://www.blackgoosebistro.com/pizza.php" method="post">
+
+<fieldset>
+  <legend>Your Information</legend>
+  <ul>
+    <li><label for="form-name">Name:</label> <input type="text" name="customername" id="form-name"></li>
+    <li><label for="form-address">Address:</label> <input type="text" name="address" id="form-address"></li>
+    <li><label for="form-tel">Telephone Number:</label> <input type="tel" name="telephone" id="form-tel"></li>
+    <li><label for="form-email">Email: <input type="email" name="email" id="form-email"></label></li>
+    <li>Delivery instructions:<br>
+    <textarea name="instructions" rows="4" cols="60" maxlength="400" id="form-story" placeholder="No more than 400 characters long."></textarea></li>
+  </ul>
+</fieldset>
+
+<fieldset>
+  <legend>Preset Pizzas &lpar; For Convenience &rpar; </legend>
+    <ul>
+      <li><label><input type="radio" name="preset" value="classiccheese"> Classic Cheese</label></li>
+      <li><label><input type="radio" name="preset" value="pepperoni"> Pepperoni</label></li>
+      <li><label><input type="radio" name="preset" value="sausage"> Sausage</label></li>
+      <li><label><input type="radio" name="preset" value="bbqpizza"> BBQ Pizza</label></li>
+      <li><label><input type="radio" name="preset" value="hawaiian"> Hawaiian</label></li>
+    </ul>
+  </fieldset>
+
+<h2>Customize Your Pie:</h2>
+
+<fieldset>
+  <legend>Pizza specs</legend>
+  <fieldset>
+    <legend>Crust <em>(Choose one)</em>:</legend>
+    <ul>
+      <li><label><input type="radio" name="crust" value="white"> Gluten Free White</label></li>
+      <li><label><input type="radio" name="crust" value="multigrain"> Multigrain</label></li>
+      <li><label><input type="radio" name="crust" value="garliccrust"> Garlic Butter Crust</label></li>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+  <legend>Toppings <em>(Choose as many as you want)</em></legend>
+    <ul>
+      <li><label><input type="checkbox" name="toppings[]" value="redsauce" checked> Red sauce</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="whitesauce"> White sauce</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="bbqsauce"> BBQ Sauce</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="mozzarella"> Mozzarella cheese</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="pepperoni"> Pepperoni</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="sausage"> Sausage</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="mushrooms"> Mushrooms</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="peppers"> Peppers</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="anchovies"> Anchovies</label></li>
+      <li><label><input type="checkbox" name="toppings[]" value="pineapple"> Pineapple</label></li>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+  <legend>Number</legend>
+  <p>How many pizzas: 
+  <select name="pizzas" size="1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+  </select>
+  </p>
+  </fieldset>
+
+</fieldset> <!-- closes 'Pizza Specs' fieldset -->
+
+<p><a href="pizza.html"><input type="submit" value="Bring me a pizza!"></a></p>
+
+</form>
+<p><a href="../gluten.html"><input type="submit" value="Wait I changed my mind"></a></p>
+</body>
+</html>

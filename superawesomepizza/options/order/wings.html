@@ -1,0 +1,104 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+   <title>Super Awesome Pizza! Order Menu</title>
+   <style>
+      ol, ul { 
+     list-style-type: none;
+    }
+    body {
+        font: 1.25rem/1.75rem sans-serif;
+        color: rgb(126, 5, 0);
+        background-color: rgb(253, 244, 220);
+        
+    }
+    header {
+        background-color: #fcb336;
+        text-align: center;
+        padding: 12px;
+        margin-bottom: 36px;
+    }
+    h1 {
+        color: rgb(231, 34, 34);
+        font: bold 1.75rem sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        text-align: center;
+        margin: 0;
+    }
+    h2 {
+        color: orange;
+        font: bold 1.25rem sans-serif;
+        text-align: center;
+    }
+    legend {
+        color: rgb(255, 102, 0);
+        font: sans-serif;
+        text-align: center;
+    }   
+    
+   </style>
+</head>
+
+<body>
+
+<h1>Super Awesome Pizza! | Pizza-on-Demand <br>&lpar; Wings &rpar; </h1>
+
+<form action="http://www.blackgoosebistro.com/pizza.php" method="post">
+
+<fieldset>
+  <legend>Your Information</legend>
+  <ul>
+    <li><label for="form-name">Name:</label> <input type="text" name="customername" id="form-name"></li>
+    <li><label for="form-address">Address:</label> <input type="text" name="address" id="form-address"></li>
+    <li><label for="form-tel">Telephone Number:</label> <input type="tel" name="telephone" id="form-tel"></li>
+    <li><label for="form-email">Email: <input type="email" name="email" id="form-email"></label></li>
+    <li>Delivery instructions:<br>
+    <textarea name="instructions" rows="4" cols="60" maxlength="400" id="form-story" placeholder="No more than 400 characters long."></textarea></li>
+  </ul>
+</fieldset>
+
+<h2>Choose Your Flavor:</h2>
+
+<fieldset>
+    <legend>Sauce <em>(Choose one)</em>:</legend>
+    <ul>
+      <li><label><input type="radio" name="sauce" value="lemonpepper"> Lemon Pepper</label></li>
+      <li><label><input type="radio" name="sauce" value="buffalo"> Buffalo</label></li>
+      <li><label><input type="radio" name="sauce" value="sweetandspicy"> Sweet & Spicy</label></li>
+      <li><label><input type="radio" name="sauce" value="garlicparmesan"> Garlic Parmesan </label></li>
+      <li><label><input type="radio" name="sauce" value="sauceless"> Sauceless </label></li>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+  <legend>Wing Style</legend>
+    <ul>
+      <li><label><input type="radio" name="bone" value="bonein"> Bone-In</label></li>
+      <li><label><input type="radio" name="bone" value="boneless"> Boneless</label></li>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+  <legend>Number</legend>
+  <p>How many wings?: 
+  <select name="wings" size="5">
+    <option>5</option>
+    <option>10</option>
+    <option>15</option>
+    <option>20</option>
+    <option>30</option>
+    <option>50</option>
+  </select>
+  </p>
+  </fieldset>
+
+</fieldset> <!-- closes 'Pizza Specs' fieldset -->
+
+<p><a href="pizza.html"><input type="submit" value="Bring me some wings!"></a></p>
+
+</form>
+<p><a href="../wings.html"><input type="submit" value="Wait I changed my mind"></a></p>
+</body>
+</html>
